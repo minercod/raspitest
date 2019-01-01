@@ -22,12 +22,12 @@ def ranging():
     while GP.input(echo_channel):
         pass
     t2 = time.time()
-    return (t2-t1)*340*100/2
+    return (t2-t1)*340/2
 
 if __name__ == '__main__':
     try:
         while True:
-            print('Distance is %0.2f cm'%ranging())
+            print('Distance is %0.3f m'%ranging())
             time.sleep(1)
     except:
         GP.cleanup()
