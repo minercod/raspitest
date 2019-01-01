@@ -61,5 +61,9 @@ def compute(data):
         compute(driver())
 
 if __name__ == '__main__':
-    compute(driver())
+    try:
+        compute(driver())
+    except:
+        GP.cleanup()
+
 

@@ -17,6 +17,8 @@ def detect():
 
 
 if __name__ == '__main__':
-    detect()
-    GP.cleanup()
+    try:
+        detect()
+    except:
+        GP.cleanup()
 
